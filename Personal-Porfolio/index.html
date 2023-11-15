@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6a7152d4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu"></i>
+        </nav>
+        <div class="header-text">
+        <p>Full stack Developer</p>
+        <h1>Hi, i'm <span>Rodrigue</span><br> Mpouam Eba from Montreal</h1>
+        </div>
+    </div>
+</div>
+<!--------------------------------about----------------------------------------------------->
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experiences</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>FULL STACK</span><br>Developing web/App interfaces</li>
+                        <li><span>Web development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 – Present</span><br>Marketing coodinator/Business Development, Freelancer, Eba Digital Services</li>
+                        <li><span>2018 – 2022</span><br>Network and Télécommunication Technician at Bell Technical Solutions</li>
+                        <li><span>2017</span><br>Internship at Technical Aviron Institute, Industrial Drafting</li>
+                        <li><span>2015</span><br>sell and customer service Advisor</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 – 2023</span><br>AEC Software Development from Maisonneuve College</li>
+                        <li><span>2017</span><br>DEP Industrial Drafting from Technical Aviron Institute</li>
+                        <li><span>2013</span><br>Higher Technician's Certificate in Management Computer Science From INSPAD, Cameroon</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div> 
+<!-------------------=services--------------------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full Stack</h2>
+                <p>As a Full Stack developer, I provide comprehensive services for web and app projects, including UI design, front-end and back-end development, database management, third-party service integration, performance optimization, security and privacy, as well as deployment and maintenance. My goal is to deliver tailored solutions to your needs and ensure the quality of your application.</p>
+                <a href="#">Learn more</a>    
+            </div> 
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Development</h2>
+                <p>For web development services, I offer end-to-end solutions covering UI design, front-end and back-end development, database management, third-party integrations, performance optimization, security and privacy, as well as deployment and maintenance. I aim to create responsive and user-friendly websites tailored to your requirements, ensuring high quality and seamless user experiences.</p>
+                <a href="#">Learn more</a>    
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>For app development services, I provide a comprehensive range of solutions including UI design, front-end and back-end development, database management, third-party service integration, performance optimization, security and privacy, along with deployment and maintenance. My goal is to create engaging and user-friendly mobile applications tailored to your needs, ensuring high quality and smooth user experiences across various platforms.</p>
+                <a href="#">Learn more</a>    
+            </div>  
+        </div>
+    </div>
+</div>
+<!-------------------------portfolio---------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>chic gentleman shop</h3>
+                    <p>La chaleur et le style combinés en une seule veste pour homme </p>
+                    <a href="https://chicgentleman.shop/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>agence elie inc</h3>
+                    <p>Agence de placement et de recrutement</p>
+                    <a href="https://www.agenceelieinc.com/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>beauty drop store</h3>
+                    <p>Quality products for women</p>
+                    <a href="https://www.beautydrop.store/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            <div class="work">
+                <img src="images/work-4.jpg">
+                <div class="layer">
+                    <h3>Service Randy Leclair</h3>
+                    <p>Service de nettoyage de gouttières et lavages à pression résidentiel</p>
+                    <a href="https://www.servicerandyleclair.ca/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            <div class="work">
+                <img src="images/work-5.jpg">
+                <div class="layer">
+                    <h3>Groupe RP excavation</h3>
+                    <p>Des services d'exclavation et de paysagement de qualité professionnelle</p>
+                    <a href="https://grouperpexcavation.com/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            <div class="work">
+                <img src="images/work-6.jpg">
+                <div class="layer">
+                    <h3>nkandi</h3>
+                    <p>Exprimez votre féminité avec nos collections de sous-vetêments tendance</p>
+                    <a href="https://nkandi.com/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            
+            <div class="work">
+                <img src="images/work-8.jpg">
+                <div class="layer">
+                    <h3>digilearn cloud</h3>
+                    <p>Revendez nos 27 formationsen marque blanche</p>
+                    <a href="https://digilearn.cloud/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            <div class="work">
+                <img src="images/work-9.jpg">
+                <div class="layer">
+                    <h3>Eba Digital Services</h3>
+                    <p>Services numériques pour les PME</p>
+                    <a href="https://ebadigital.com/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------contact---------------->
+<div id="contact">
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rodriguempouameba@outlook.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+1(438)364-1989</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rodrigue-mpouam-eba-0007a588/"><i class="fa-brands fa-linkedin"></i></a>               
+                    <a href="https://twitter.com/EbaMpouam/"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright <i class="fa-sharp fa-regular fa-copyright"></i> Rodrigue Mpouam Eba</p>
+    </div>
+</div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwE-sZcOz0XUEItxfbAlJPKFWF9NBOpJg5pzIYPwjvdMtNuNWI_nXNbZZjkCjvgPBbdMg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
